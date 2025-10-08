@@ -46,7 +46,6 @@ Sales management system.
 
 
 Made by [Sebastian Arellano](https://github.com/SebaAre)
-Maven
 
 
 Made by Sebastian Arellano
