@@ -2,7 +2,9 @@
 
 Spring Boot TodoCode Course
 My solutions for the TodoCode Academy Spring Boot course by Luisina de Paula.
+
 Projects
+
 Exercise 01 - Programming Student API
 API to manage courses and topics for a student's CV.
 
@@ -31,8 +33,6 @@ Spring Boot 3.5.6
 Spring Data JPA
 MySQL
 Maven
-Configure database in application.properties
-Run: mvn spring-boot:run
 
 
 Made by Sebastian Arellano
