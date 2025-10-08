@@ -47,5 +47,3 @@ Sales management system.
 
 Made by [Sebastian Arellano](https://github.com/SebaAre)
 
-
-Made by Sebastian Arellano
