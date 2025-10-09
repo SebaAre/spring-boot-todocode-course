@@ -45,7 +45,7 @@ public class CourseController {
     }
     
     //Modifie the data in a course
-    @PutMapping("/course/edit")
+    @PutMapping("/courses/edit")
     public String editCourse(@RequestBody Course course){
         courseService.editCourse(course);
         return "Course edited successfully";

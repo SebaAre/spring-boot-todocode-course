@@ -8,31 +8,36 @@ Manage courses and their topics. One course = many topics.
 
 ## Database
 
-Course id, name, modality, completionDate, topics list
+**Course:** id, name, modality, completionDate, topics list
 
-Topic id, name, description
+**Topic:** id, name, description
 
-## API Endpoints
+## Endpoints
 
-Courses
-- POST `apicourses` - Create
-- GET `apicourses` - Get all
-- GET `apicourses{id}` - Get one
-- GET `apicourses{id}topics` - Get course topics
-- GET `apicoursessearchname=Java` - Search by name
-- PUT `apicourses{id}` - Update
-- DELETE `apicourses{id}` - Delete
+### Courses
 
-Topics
-- POST `apitopics` - Create
-- GET `apitopics` - Get all
-- GET `apitopics{id}` - Get one
-- PUT `apitopics{id}` - Update
-- DELETE `apitopics{id}` - Delete
+- `POST /courses/create` - Create course
+- `GET /courses/get` - Get all courses
+- `GET /courses/topic/{idCourse}` - Get topics from a course
+- `GET /courses/java` - Get courses containing "Java"
+- `PUT /courses/edit` - Update course
+
+### Topics
+
+- `POST /topic/create` - Create topic and assign to course
+- `PUT /topic/edit` - Update topic
+
+## Setup
+
+Create MySQL database: `courses`
+
+Edit `application.properties`:
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/courses
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
 
 
-## Tech
-
-Java 17, Spring Boot, JPA, MySQL
-
-[← Back](..README.md)
+## Tech Used
+Java 17, Spring Boot, JPA, MySQL, Lombok
