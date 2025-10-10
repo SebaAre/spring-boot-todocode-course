@@ -15,27 +15,25 @@ Manage pets and owners. One pet = one owner.
 
 ## Database
 
-**Pet:** id, name, species, breed, color, owner
+**Pet:** id, name, species, breed, color, owner(foreign key to Owner)
 
 **Owner:** id, dni, firstName, lastName, phone
 
 ## Endpoints
 
 ### Pets
-* `POST /pets/create` - Create pet
-* `GET /pets/get` - Get all pets
-* `GET /pets/{id}` - Get pet by ID
-* `PUT /pets/edit` - Update pet
-* `DELETE /pets/delete/{id}` - Delete pet
-* `GET /pets/filter?species=perro&breed=caniche` - Filter by species and breed
-* `GET /pets/{id}/with-owner` - Get pet with owner details
+* `POST /pet/create` - Create pet
+* `GET /pet/get` - Get all pets
+* `PUT /pet/edit` - Update pet
+* `DELETE /pet/delete/{id}` - Delete pet
+* `GET /pet/get_poodles` - Get all poodles
+* `GET /pet/get_owner` - Get pets with owner details (returns DTO)
 
 ### Owners
-* `POST /owners/create` - Create owner
-* `GET /owners/get` - Get all owners
-* `GET /owners/{id}` - Get owner by ID
-* `PUT /owners/edit` - Update owner
-* `DELETE /owners/delete/{id}` - Delete owner
+* `POST /owner/create` - Create owner
+* `GET /owner/get` - Get all owners
+* `PUT /owner/edit` - Update owner
+* `DELETE /owner/delete/{id}` - Delete owner
 
 ## Setup
 
