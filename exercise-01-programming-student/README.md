@@ -1,3 +1,10 @@
+# Spring Boot TodoCode Course
+
+Exercise of the TodoCode Academy Spring Boot course by Luisina de Paula.
+
+Academy Website: https://todocodeacademy.com/
+
+
 # Exercise 01 - Programming Student API
 
 Simple API to track courses and topics for a programming student's CV.
