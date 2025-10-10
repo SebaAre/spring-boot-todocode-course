@@ -1,3 +1,10 @@
+# Spring Boot TodoCode Course
+
+Exercise of the TodoCode Academy Spring Boot course by Luisina de Paula.
+
+Academy Website: https://todocodeacademy.com/
+
+
 # Exercise 02 - Veterinary Clinic API
 
 Simple API to manage pets and their owners at a veterinary clinic.
