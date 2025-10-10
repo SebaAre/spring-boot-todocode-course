@@ -2,6 +2,8 @@
 
 My solutions for the TodoCode Academy Spring Boot course by Luisina de Paula.
 
+Academy Website: https://todocodeacademy.com/
+
 ## Projects
 
 ### Exercise 01 - Programming Student API
@@ -43,7 +45,4 @@ Sales management system.
 - Spring Data JPA
 - MySQL
 - Maven
-
-
-Made by [Sebastian Arellano](https://github.com/SebaAre)
 
