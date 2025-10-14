@@ -14,11 +14,13 @@ public interface ClientService {
     
     public Client getClient(Long clientId);
     
+    //UPDATE
+    public Client editClient(Client client);
+    
     //DELETE
     public void deleteClient(Long clientId);
     
-    //UPDATE
-    public Client editClient(Client client);
+    
     
     
 }
