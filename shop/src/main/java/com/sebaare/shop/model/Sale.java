@@ -1,6 +1,7 @@
 package com.sebaare.shop.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -24,7 +25,7 @@ public class Sale {
     private LocalDate saleDate;
     private Double total;
     
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "sale_product",
         joinColumns = @JoinColumn(name = "sale_id"),
@@ -32,7 +33,7 @@ public class Sale {
     )
     private List<Product> products;
     
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "client_id")
     private Client client;
 
