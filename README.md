@@ -41,7 +41,7 @@ Complete sales management system for a shop.
 * DTO for complex queries
 * 19 REST endpoints
 
-**[View project →](./exercise-03-shop)**
+**[View project →](./shop)**
 
 ---
 
